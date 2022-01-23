@@ -1,7 +1,8 @@
 package MovieManager;
 
 public class Manager {
-    private Movie[] movies = new Movie[10];
+    private Movie[] movies;
+
 
 //конструкторы
 
@@ -10,7 +11,10 @@ public class Manager {
     }
 
     public Manager() {
+        this.movies = new Movie[10];
+
     }
+
 
 //методы
 
