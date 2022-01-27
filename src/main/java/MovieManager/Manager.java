@@ -1,17 +1,17 @@
 package MovieManager;
 
 public class Manager {
-    private Movie[] movies;
+    private Movie[] movies = new Movie[0];
+    private int massiveLength = 10;
 
 
 //конструкторы
 
-    public Manager(Movie[] movies) {
-        this.movies = movies;
+    public Manager(int massiveLength) {
+        this.massiveLength = massiveLength;
     }
 
     public Manager() {
-        this.movies = new Movie[10];
 
     }
 
@@ -36,8 +36,8 @@ public class Manager {
 
         int resultLength;
 
-        if (movies.length >= 10) {
-            resultLength = 10;
+        if (movies.length >= massiveLength) {
+            resultLength = massiveLength;
         } else {
             resultLength = movies.length;
         }
